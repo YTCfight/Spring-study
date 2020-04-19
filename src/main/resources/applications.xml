@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"
+default-autowire="byName">
     <!-- 新增这里 -->
     <!-- 创建一个字符串对象，对象名为 myName，通过 new String("小比特")生成对象 -->
     <bean id="myName" class="java.lang.String">
@@ -28,6 +30,15 @@
         <property name="age" value="30" />
     </bean>
 
+    <!-- 实例工厂方法创建 Bean 对象 -->
+    <bean id="duckFactory" class="frank.ioc.DuckFactory" />
+    <bean id = "duck5" class="frank.ioc.Duck" factory-bean="duckFactory"
+          factory-method="create" />
+
+    <!-- 静态工厂方法创建 Bean 对象,类型是方法的返回值类型 -->
+    <bean id="duck6" class="frank.ioc.DuckFactory" factory-method="create2" />
+
+
     <!-- scope="prototype" 表示每次使用该对象时，每次都重新创建一个对象 -->
     <bean id="duckShop" class="frank.ioc.DuckShop" scope="prototype">
         <property name="name" value="比特烤鸭店" />
@@ -39,6 +50,15 @@
         </property>
     </bean>
 
-    <bean id="lifeCycle" class="frank.ioc.Lifecycle">
-    </bean>
+    <bean id="lifeCycle" class="frank.ioc.Lifecycle" init-method="init"
+          destroy-method="destroy2"/>
+
+    <!-- 扫描 base-package 的包，所有子包都会进行扫描：包含 Spring 注解的类：
+     1. @Controller 做前端请求处理的类
+     2. @Service 做业务处理的类
+     3.@Component  比较宽泛的概念，一般指组件
+     4.@Repository 一般数据操作的类
+     5.@Configuration 配置类
+     -->
+    <context:component-scan base-package="frank.scan" />
 </beans>

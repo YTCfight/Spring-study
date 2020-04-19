@@ -5,6 +5,9 @@ public class Duck {
 
     private Integer age;
 
+    public Duck() {
+    }
+
     public Duck(String name) {
         this.name = name;
     }

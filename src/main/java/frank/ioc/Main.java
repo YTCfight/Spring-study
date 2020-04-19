@@ -1,5 +1,6 @@
 package frank.ioc;
 
+import frank.scan.LoginController;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
@@ -9,17 +10,17 @@ import org.springframework.core.io.FileSystemResource;
 public class Main {
     public static void main(String[] args) {
         // 加载 Spring 的配置文件，初始化上下文：生成 Bean 对象
-//        ApplicationContext context = new
-//                ClassPathXmlApplicationContext("applications.xml");
+        ApplicationContext context = new
+                ClassPathXmlApplicationContext("applications.xml");
 //        // 通过名字获取 Bean 对象
 //        Object o = context.getBean("myName");
 //        System.out.println(o.getClass());
 //        System.out.println(o);
 
         //使用 BeanFactory 方式创建实例对象
-        BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("/Users/yangtongchun/spring-study/src/main/resources/applications.xml"));
-        Object o = beanFactory.getBean("duck2");
-        System.out.println(o);
+//        BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("/Users/yangtongchun/spring-study/src/main/resources/applications.xml"));
+//        Object o = beanFactory.getBean("duck2");
+//        System.out.println(o);
 
 
 //        Object duck1 = context.getBean("duck1");
@@ -43,5 +44,14 @@ public class Main {
 //        Object duck = context.getBean(Duck.class);
 //        System.out.println(duck.getClass());
 //        System.out.println(duck);
+
+
+//        Object duck6 = context.getBean("duck6");
+//        System.out.println(duck6.getClass());
+//        System.out.println(duck6);
+
+        LoginController controller = (LoginController) context.getBean("loginController");
+        System.out.println(controller.getLoginService());
+        System.out.println(controller.getDuck3());
     }
 }

@@ -45,4 +45,12 @@ public class Lifecycle implements BeanNameAware, BeanFactoryAware,
     public void afterPropertiesSet() throws Exception {
         System.out.println("InitializingBean");
     }
+
+    public void init() {
+        System.out.println("自己定义的 init 方法");
+    }
+
+    public void destroy2() {
+        System.out.println("自己定义的 destroy 方法");
+    }
 }
