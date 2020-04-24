@@ -23,9 +23,9 @@ public class Main {
 //        System.out.println(o);
 
 
-//        Object duck1 = context.getBean("duck1");
-//        System.out.println(duck1.getClass());
-//        System.out.println(duck1);
+        Object duck1 = context.getBean("duck1");
+        System.out.println(duck1.getClass());
+        System.out.println(duck1);
 //
 //        Object duck2 = context.getBean("duck2");
 //        System.out.println(duck2.getClass());

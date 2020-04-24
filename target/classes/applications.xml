@@ -3,7 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"
+default-autowire="byName">
     <!-- 新增这里 -->
     <!-- 创建一个字符串对象，对象名为 myName，通过 new String("小比特")生成对象 -->
     <bean id="myName" class="java.lang.String">
@@ -48,6 +49,9 @@
             </list>
         </property>
     </bean>
+
+<!--    自动装配-->
+    <bean name="loginController2" class="frank.scan.LoginController" autowire="byName" />
 
     <bean id="lifeCycle" class="frank.ioc.Lifecycle" init-method="init"
           destroy-method="destroy2"/>

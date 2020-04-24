@@ -15,6 +15,7 @@ public class LoginController {
     装配 Bean
     1. @Autowired：Spring 的注解，只能 Spring 框架使用
     2. @Resource：jdk的注解，是一种装配资源类的规范，Spring 实现了这个规范，所以也可以使用该注解
+    @Autowired 默认按照 Bean 类型装配，而 @Resource 默认按照 Bean 实例名称进行装配。
      */
     @Autowired
     private LoginService loginService;
