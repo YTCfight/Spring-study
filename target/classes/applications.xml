@@ -50,7 +50,7 @@ default-autowire="byName">
         </property>
     </bean>
 
-<!--    自动装配-->
+<!--    自动装配,在容器中按照 name 的方式寻找与 LoginController 类中属性名字相同的 Bean-->
     <bean name="loginController2" class="frank.scan.LoginController" autowire="byName" />
 
     <bean id="lifeCycle" class="frank.ioc.Lifecycle" init-method="init"

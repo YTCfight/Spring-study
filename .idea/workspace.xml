@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ac0c9a30-037b-4cc5-bc92-759282169e0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frank/ioc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frank/ioc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frank/scan/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frank/scan/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applications.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applications.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frank/ioc/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frank/ioc/Duck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frank/ioc/DuckShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frank/ioc/DuckShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frank/scan/Conf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frank/scan/Conf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/applications.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applications.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/frank/ioc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frank/ioc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frank/scan/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frank/scan/LoginController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spring-study" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -147,7 +151,22 @@
       <workItem from="1587360213378" duration="6000" />
       <workItem from="1587372171149" duration="2883000" />
       <workItem from="1587717304236" duration="124000" />
-      <workItem from="1587735472550" duration="1685000" />
+      <workItem from="1587735472550" duration="1864000" />
+      <workItem from="1587780765516" duration="235000" />
+      <workItem from="1587794139254" duration="157000" />
+      <workItem from="1587863598443" duration="399000" />
+      <workItem from="1587864191551" duration="26000" />
+      <workItem from="1588134714897" duration="454000" />
+      <workItem from="1588136409028" duration="93000" />
+      <workItem from="1588300843196" duration="1261000" />
+      <workItem from="1588324331435" duration="658000" />
+      <workItem from="1588326133718" duration="147000" />
+      <workItem from="1588326357495" duration="1550000" />
+      <workItem from="1588385329153" duration="100000" />
+      <workItem from="1588506020954" duration="47000" />
+      <workItem from="1588506139890" duration="131000" />
+      <workItem from="1588506304351" duration="482000" />
+      <workItem from="1588515828553" duration="191000" />
     </task>
     <task id="LOCAL-00001" summary="杨同春">
       <created>1587135259921</created>
@@ -170,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587307499868</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="杨同春">
+      <created>1587738275339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587738275339</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,42 +215,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="489" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1587283645359" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1587307499393">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1587738274566">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587307499393" />
-    <state width="1388" height="283" key="GridCell.Tab.0.bottom" timestamp="1587738113108">
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587738274566" />
+    <state width="1388" height="283" key="GridCell.Tab.0.bottom" timestamp="1588326064885">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="283" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587738113107" />
+    <state width="1388" height="283" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588326064885" />
     <state width="1388" height="283" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587037378841" />
-    <state width="1388" height="283" key="GridCell.Tab.0.center" timestamp="1587738113106">
+    <state width="1388" height="283" key="GridCell.Tab.0.center" timestamp="1588326064884">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="283" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587738113106" />
+    <state width="1388" height="283" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588326064884" />
     <state width="1388" height="283" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1587037378840" />
-    <state width="1388" height="283" key="GridCell.Tab.0.left" timestamp="1587738113105">
+    <state width="1388" height="283" key="GridCell.Tab.0.left" timestamp="1588326064883">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="283" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587738113105" />
+    <state width="1388" height="283" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588326064883" />
     <state width="1388" height="283" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1587037378839" />
-    <state width="1388" height="283" key="GridCell.Tab.0.right" timestamp="1587738113107">
+    <state width="1388" height="283" key="GridCell.Tab.0.right" timestamp="1588326064884">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="283" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587738113107" />
+    <state width="1388" height="283" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588326064884" />
     <state width="1388" height="283" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1587037378840" />
     <state x="120" y="1" key="SettingsEditor" timestamp="1587114869755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="120" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587114869755" />
-    <state x="220" y="112" key="Vcs.Push.Dialog.v2" timestamp="1587307503580">
+    <state x="220" y="112" key="Vcs.Push.Dialog.v2" timestamp="1587738277977">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="220" y="112" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1587307503580" />
-    <state x="0" y="82" key="new project wizard" timestamp="1587287285127">
+    <state x="220" y="112" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1587738277977" />
+    <state x="0" y="82" key="new project wizard" timestamp="1588301772169">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="82" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1587287285127" />
+    <state x="0" y="82" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1588301772169" />
     <state x="301" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1587038176241">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
